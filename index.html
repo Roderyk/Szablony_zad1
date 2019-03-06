@@ -33,24 +33,90 @@
         </header>
         <main class="main-content">
             <div class="boxes">
-                <div class="box box-v">
-                    
-                        <img src="img/box-3.jpg" alt="krajobraz">
-                    
-                </div>
+                <a href="#" class="box box-v">
+
+                    <img src="img/box-3.jpg" alt="krajobraz">
+
+                </a>
+                <a href="#" class="box box-h">
+
+                    <img src="img/box-2.jpg" alt="modelka">
+                    <div class="boxlabel">
+                        <span class="boxlabel-hdr">Fotograf miesiąca</span>
+                        <span class="boxlabel-hdr1">Joanna Koroniewska</span>
+                    </div>
+                </a>
+                <a href="#" class="box">
+
+                    <img src="img/box1.jpg" alt="fotograf">
+
+                </a>
                 <div class="box box-h">
-                    
-                        <img src="img/box-2.jpg" alt="modelka">
-                   
                 </div>
                 <div class="box">
-                    
-                        <img src="img/box1.jpg" alt="fotograf">
-                    
+                    <div class="tytul">
+                        <h2>Konkurs</h2>
+                    </div>
+                    <h3>Wystartował konkurs na najlepszą pracę domową!</h3>
+                    <p class="tekstkafelek">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation</p>
+                </div>
+                <div class="box box-h">
+
+                </div>
+                <div class="box">
+
+                </div>
+                <div class="box">
+
+                </div>
+                <div class="box box-h">
+
+                </div>
+                <div class="box">
+
+                </div>
+                <div class="box">
+
                 </div>
             </div>
         </main>
+        <footer class="mainfoot main-content">
+            <p>
+                <a href="#" class="foota">Kontakt</a>
+                <a href="#" class="foota">O nas</a>
+                <a href="#" class="foota">Poradnik</a>
+            </p>
+            <div>SzerokiKadr.pl to serwis dla miłośników fotografii, którzy chcą się dowiedzieć, jak robić dobre
+                zdjęcia. To także kompleksowy kurs fotografii online, który inspiruje, uczy i motywuje. Artykuły i
+                videoporadniki tworzone przez zawodowców poprowadzą przez wszystkie stopnie wtajemniczenia sztuki
+                fotograficznej. Prezentowane zagadnienia zostały zilustrowane znakomitymi zdjęciami i grafikami.
+                Poradniki odpowiadają na pytanie, jak fotografować najpopularniejsze tematy. Pomagają sprostać każdemu
+                wyzwaniu fotograficznemu. W filmowych wywiadach polscy i zagraniczni mistrzowie fotografii opowiadają o
+                swojej życiowej pasji. Co miesiąc nowy znakomity fotograf zdradza tajniki swojego warsztatu,
+                wprowadzając czytelnika w świat jednego gatunku fotografii. Na czytelników czekają zadania domowe w
+                comiesięcznym konkursie fotograficznym dla amatorów. Codziennie portal wzbogacany jest także o nową
+                porcję inspirujących linków. Zachęcamy do zaglądania na SzerokiKadr.pl, czyli dobrze wykadrowany portal
+                edukacyjny o fotografii!</div>
+        </footer>
     </div>
+    <aside class="comm">
+        <button id="commBtn"class="commbtn">
+            <span class="commico"></span>
+        </button>
+        <div class="commcont">
+
+        </div>
+    </aside>
+    <script>
+        var btn = document.getElementById('commBtn');
+        if(btn) {
+            btn.addEventListener('click', function(){
+                this.parnetNode.classList.toggle('open');
+            })
+        }
+    </script>
 </body>
 
 </html>

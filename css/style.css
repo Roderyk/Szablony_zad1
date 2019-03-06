@@ -59,6 +59,7 @@ body{
 h1, h2, h3, h4, h5, h6,
 .cust-font{
     font-family: 'Oswald', sans-serif;
+    font-weight: 300;
 }
 
 .main-nav_a{
@@ -110,10 +111,115 @@ margin-bottom: 5px;
     height: 241px;
     background-color: #262626;
     margin: 0 20px 20px 0;
+    position: relative;
+}
+.box:hover .boxlabel{
+    opacity: 0.3;
 }
 .box-h{
     width: 486px;
 }
 .box-v{
     height: 502px;
+}
+.tytul {
+    background-color: slategrey;
+    height: 27px;
+    width: fit-content;
+    margin-top: 24px;
+    margin-left: 0px;
+    
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-left: 14px;
+    margin-right: 28px;
+    line-height: 27px;
+}
+h3 {
+    margin: 13px 48px 0px 15px;
+}
+p.tekstkafelek {
+    margin: 15px 15px 0px 15px;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.36;
+    opacity: 88%;
+}
+.boxlabel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(38, 38, 38, 0.81);
+    height: 41px;
+    opacity: 81;
+}
+.boxlabel-hdr {
+    padding: 7px 0px 8px 13px;
+    color: #31A6B2;
+    font-size: 18px;
+    line-height: 41px;
+}
+.boxlabel-hdr1 {
+    font-size: 18px;
+    padding: 7px 0px 8px 0px;
+    line-height: 41px;
+    color: white;
+}
+.boxlabel-hdr:after{
+    content: "|";
+    display: inline-block;
+    margin-left: 7px;
+    margin-left: 5px;
+}
+.foota {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 11px;
+}
+
+.comm{
+    position: fixed;
+    top: 80px;
+    right: -300px;
+    background-color: #578992;
+    height: 400px;
+    width: 300px;
+}
+.comm.open{
+    right: 0;
+    
+}
+.commbtn{
+    position: absolute;
+    left: -38px;
+    width: 38px;
+    height: 180px;
+    background-color: #578992;
+    border: 0;
+    cursor: pointer;
+}
+.commico{
+    width: 26px;
+    height: 20px;
+    background-color: black;
+    left: 0px;
+    display: block;
+    border-radius: 4px; 
+}
+.commico:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 76px;
+    left: 6px;
+    border-width: 20px 20px 0 0;
+    border-style: solid;
+    border-color: black transparent;
+    width: 0;
 }
